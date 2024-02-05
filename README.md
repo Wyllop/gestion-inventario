@@ -15,7 +15,7 @@ Para configurar este proyecto en tu entorno local, sigue estos pasos:
 ```bash
 git clone https://github.com/usuario/gestion-inventario.git
 cd gestion-inventario
-
+````
 ## Referencia de la API
 
 A continuación se presentan los endpoints de la API con sus respectivas operaciones:
@@ -38,7 +38,7 @@ A continuación se presentan los endpoints de la API con sus respectivas operaci
         Descripción: Elimina un producto por ID.
         Respuesta: Mensaje de confirmación de eliminación.
 
-Modelos
+## Modelos
 
 El modelo principal de la aplicación es Producto, que tiene los siguientes campos:
 
@@ -48,6 +48,6 @@ El modelo principal de la aplicación es Producto, que tiene los siguientes camp
     cantidad: Cantidad en stock del producto.
     categoria: Categoría asignada al producto.
 
-Configuración
+## Configuración
 
 El archivo CorsConfig.java contiene la configuración de CORS necesaria para permitir o restringir las solicitudes cruzadas en la aplicación. Por defecto, se permite el acceso desde cualquier origen para facilitar el desarrollo y las pruebas.
