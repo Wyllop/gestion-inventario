@@ -51,3 +51,56 @@ El modelo principal de la aplicación es Producto, que tiene los siguientes camp
 ## Configuración
 
 El archivo CorsConfig.java contiene la configuración de CORS necesaria para permitir o restringir las solicitudes cruzadas en la aplicación. Por defecto, se permite el acceso desde cualquier origen para facilitar el desarrollo y las pruebas.
+
+
+# Gestión de Inventario con API
+
+## Descripción
+
+Este proyecto es una interfaz de usuario web para una aplicación de gestión de inventario. Permite a los usuarios visualizar, añadir, editar y eliminar productos de un inventario a través de una API RESTful.
+
+## Estructura del Proyecto
+
+El proyecto se compone de un archivo HTML (`index.html`) que estructura la interfaz de usuario y un archivo JavaScript (`main.js`) que maneja las interacciones del usuario y las solicitudes a la API.
+
+### `index.html`
+
+El archivo `index.html` define la estructura de la página web y carga los recursos necesarios. Se utiliza Bootstrap para el diseño y estilos de la página. La interfaz consta de una barra de navegación, una tabla para mostrar los productos y un formulario para añadir o editar productos.
+
+### `main.js`
+
+El archivo `main.js` contiene la lógica para interactuar con la API del backend. Define las funciones para listar los productos, guardar un nuevo producto, eliminar un producto y editar la información de un producto existente.
+
+## Características
+
+- **Listar Productos**: Muestra todos los productos existentes en el inventario.
+- **Añadir Producto**: Permite ingresar nuevos productos al inventario.
+- **Editar Producto**: Habilita la edición de la información de productos existentes.
+- **Eliminar Producto**: Permite remover productos del inventario.
+
+## Uso
+
+Para utilizar la aplicación, el usuario debe:
+
+1. Abrir el archivo `index.html` en un navegador web.
+2. Interactuar con la interfaz para añadir, editar o eliminar productos.
+3. Las acciones realizadas en la interfaz se reflejarán en el servidor a través de la API.
+
+## Funciones de JavaScript
+
+- `list()`: Recupera y muestra la lista de productos.
+- `save()`: Guarda un nuevo producto en el inventario.
+- `deleteProducto()`: Elimina un producto existente.
+- `rellenarProducto()`: Rellena el formulario con los datos de un producto para su edición.
+- `editAlumno()`: Actualiza la información de un producto.
+- `reset()`: Limpia los campos del formulario.
+
+## Dependencias
+
+- [Bootstrap](https://getbootstrap.com/): Utilizado para los estilos y componentes de la interfaz.
+- [jQuery](https://jquery.com/): Utilizado para facilitar las solicitudes AJAX y la manipulación del DOM.
+
+## Contacto
+
+Si tienes alguna pregunta o necesitas ayuda con la aplicación, no dudes en contactar al equipo de desarrollo.
+
