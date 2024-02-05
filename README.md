@@ -53,9 +53,8 @@ El modelo principal de la aplicación es Producto, que tiene los siguientes camp
 El archivo CorsConfig.java contiene la configuración de CORS necesaria para permitir o restringir las solicitudes cruzadas en la aplicación. Por defecto, se permite el acceso desde cualquier origen para facilitar el desarrollo y las pruebas.
 
 
-# Gestión de Inventario con API
 
-## Descripción
+## Descripción del front-end
 
 Este proyecto es una interfaz de usuario web para una aplicación de gestión de inventario. Permite a los usuarios visualizar, añadir, editar y eliminar productos de un inventario a través de una API RESTful.
 
@@ -100,7 +99,9 @@ Para utilizar la aplicación, el usuario debe:
 - [Bootstrap](https://getbootstrap.com/): Utilizado para los estilos y componentes de la interfaz.
 - [jQuery](https://jquery.com/): Utilizado para facilitar las solicitudes AJAX y la manipulación del DOM.
 
-## Contacto
+![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/f3ee1f60-641d-43b6-90be-f72d1c12af26)
+![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/a1a8338d-c2ce-4e2f-b900-75843dfac272)
 
-Si tienes alguna pregunta o necesitas ayuda con la aplicación, no dudes en contactar al equipo de desarrollo.
+
+
 
