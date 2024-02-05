@@ -16,7 +16,20 @@ Para configurar este proyecto en tu entorno local, sigue estos pasos:
 git clone https://github.com/usuario/gestion-inventario.git
 cd gestion-inventario
 ````
-## Referencia de la API
+
+##  Guía de Código
+
+### Estructura del Proyecto
+- `src/main/java`: Código fuente de Java para el backend.
+- `src/main/resources`: Recursos y plantillas del backend.
+- `frontend`: HTML, CSS y JavaScript para el frontend.
+
+### Componentes Clave
+- `ProductoController`: Controlador para manejar las solicitudes HTTP para productos.
+- `ProductoService`: Servicio para la lógica de negocio relacionada con los productos.
+- `ProductoRepository`: Repositorio para la abstracción de operaciones
+
+### Referencia de la API
 
 A continuación se presentan los endpoints de la API con sus respectivas operaciones:
 
@@ -37,6 +50,20 @@ A continuación se presentan los endpoints de la API con sus respectivas operaci
     DELETE /api/productos/eliminar/{id}:
         Descripción: Elimina un producto por ID.
         Respuesta: Mensaje de confirmación de eliminación.
+
+![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/a7f3f9e5-b23f-4bb1-9f67-f46a1db14e56)
+
+
+## Arquitectura y Diseño del Software
+
+### Diagramas de Arquitectura
+
+- Diagrama de la base de datos con las relaciones entre tablas.
+ ![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/6982c971-664e-4ae4-b71a-4902a41aa992)
+
+
+### Patrones de Diseño Utilizados
+- MVC (Modelo-Vista-Controlador) para la estructura del backend.
 
 ## Modelos
 
@@ -101,6 +128,9 @@ Para utilizar la aplicación, el usuario debe:
 
 ![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/f3ee1f60-641d-43b6-90be-f72d1c12af26)
 ![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/a1a8338d-c2ce-4e2f-b900-75843dfac272)
+
+![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/a78e0821-6702-48f8-8363-355187f84862)
+
 
 
 
