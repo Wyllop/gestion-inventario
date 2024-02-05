@@ -108,26 +108,10 @@ Actualmente, el proyecto gestiona una sola tabla sin relaciones externas. En el 
 
 Si se introducen nuevas tablas, aquí se documentarán sus esquemas y las claves foráneas que establezcan las relaciones con la tabla `productos`.
 
-### Indices y Optimización
-
-- Se ha creado un índice para la columna `nombre` para acelerar las búsquedas por nombre de producto.
-- Se recomienda revisar los planes de ejecución de las consultas para determinar si son necesarios índices adicionales.
-
-### Mantenimiento de la Base de Datos
-
-- Se aconseja realizar copias de seguridad periódicas de la base de datos para prevenir la pérdida de datos.
-- Para el mantenimiento y las migraciones de la base de datos se utiliza Flyway/Liquibase, lo que permite versionar y controlar los cambios en la estructura de la base de datos a lo largo del tiempo.
-
 ### Acceso a la Base de Datos
 
 - Para conectarse a la base de datos, la aplicación utiliza Spring Data JPA, lo que abstrae las operaciones de bajo nivel y facilita la implementación del patrón de repositorio.
 
-### Seguridad
-
-- Las conexiones a la base de datos se realizan utilizando credenciales seguras y se recomienda el uso de conexiones cifradas si la base de datos se encuentra en un servidor remoto.
-- Se debe evitar la exposición de las credenciales de la base de datos en el código fuente o en archivos de configuración accesibles públicamente.
-
-Para más detalles sobre la implementación específica y las consultas, revisar la documentación del código en la carpeta `repository` del proyecto.
 
 
 ## Descripción del front-end
