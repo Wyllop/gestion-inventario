@@ -59,6 +59,7 @@ A continuación se presentan los endpoints de la API con sus respectivas operaci
 ### Diagramas de Arquitectura
 
 - Diagrama de la base de datos con las relaciones entre tablas.
+
  ![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/6982c971-664e-4ae4-b71a-4902a41aa992)
 
 
@@ -79,6 +80,54 @@ El modelo principal de la aplicación es Producto, que tiene los siguientes camp
 
 El archivo CorsConfig.java contiene la configuración de CORS necesaria para permitir o restringir las solicitudes cruzadas en la aplicación. Por defecto, se permite el acceso desde cualquier origen para facilitar el desarrollo y las pruebas.
 
+## Base de Datos
+
+La aplicación utiliza una base de datos relacional para almacenar y gestionar los datos del inventario. A continuación se detalla el esquema y la estructura de la base de datos utilizada en el proyecto.
+
+### Esquema de la Base de Datos
+
+El esquema de la base de datos está compuesto por una tabla principal llamada `productos`, la cual almacena información sobre los productos del inventario.
+
+#### Tabla `productos`
+
+| Campo      | Tipo de Dato | Descripción                               | Clave |
+|------------|--------------|-------------------------------------------|-------|
+| `id`       | INT          | Identificador único del producto          | PK    |
+| `nombre`   | VARCHAR(255) | Nombre del producto                       |       |
+| `precio`   | DECIMAL      | Precio del producto                       |       |
+| `cantidad` | INT          | Cantidad en inventario del producto       |       |
+| `categoria`| VARCHAR(255) | Categoría a la que pertenece el producto  |       |
+
+- **PK**: Primary Key (Clave Primaria)
+- La columna `id` se autoincrementa y sirve como clave primaria de la tabla.
+- Los tipos de datos pueden variar según la base de datos específica utilizada (MySQL, PostgreSQL, etc.).
+
+### Relaciones
+
+Actualmente, el proyecto gestiona una sola tabla sin relaciones externas. En el futuro, se podrían añadir tablas adicionales como `categorias` o `proveedores`, las cuales tendrían relaciones foráneas con la tabla `productos` para una gestión más detallada del inventario.
+
+Si se introducen nuevas tablas, aquí se documentarán sus esquemas y las claves foráneas que establezcan las relaciones con la tabla `productos`.
+
+### Indices y Optimización
+
+- Se ha creado un índice para la columna `nombre` para acelerar las búsquedas por nombre de producto.
+- Se recomienda revisar los planes de ejecución de las consultas para determinar si son necesarios índices adicionales.
+
+### Mantenimiento de la Base de Datos
+
+- Se aconseja realizar copias de seguridad periódicas de la base de datos para prevenir la pérdida de datos.
+- Para el mantenimiento y las migraciones de la base de datos se utiliza Flyway/Liquibase, lo que permite versionar y controlar los cambios en la estructura de la base de datos a lo largo del tiempo.
+
+### Acceso a la Base de Datos
+
+- Para conectarse a la base de datos, la aplicación utiliza Spring Data JPA, lo que abstrae las operaciones de bajo nivel y facilita la implementación del patrón de repositorio.
+
+### Seguridad
+
+- Las conexiones a la base de datos se realizan utilizando credenciales seguras y se recomienda el uso de conexiones cifradas si la base de datos se encuentra en un servidor remoto.
+- Se debe evitar la exposición de las credenciales de la base de datos en el código fuente o en archivos de configuración accesibles públicamente.
+
+Para más detalles sobre la implementación específica y las consultas, revisar la documentación del código en la carpeta `repository` del proyecto.
 
 
 ## Descripción del front-end
