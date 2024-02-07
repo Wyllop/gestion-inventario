@@ -162,7 +162,7 @@ Para utilizar la aplicación, el usuario debe:
 ![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/f3ee1f60-641d-43b6-90be-f72d1c12af26)
 ![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/a1a8338d-c2ce-4e2f-b900-75843dfac272)
 
-![imagen](https://github.com/Wyllop/gestion-inventario/assets/118977401/a78e0821-6702-48f8-8363-355187f84862)
+
 
 
 
